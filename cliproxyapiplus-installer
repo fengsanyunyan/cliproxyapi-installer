@@ -598,7 +598,7 @@ setup_config() {
     
     local config="${INSTALL_DIR}/config.yaml"
     local example_config="${version_dir}/config.example.yaml"
-    local executable="${version_dir}/cli-proxy-api"
+    local executable="${version_dir}/cli-proxy-api-plus"
     
     # Copy executable to main directory
     if [[ -f "$executable" ]]; then
