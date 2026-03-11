@@ -380,8 +380,10 @@ extract_release_info() {
         log_error "Failed to extract version from release info"
         exit 1
     fi
-    
-    local expected_filename="CLIProxyAPI_${version}_${os_arch}"
+
+    # 适配 Plus 版本的 Release 文件名格式
+    local expected_filename="CLIProxyAPIPlus_${version}_${os_arch}"
+    # local expected_filename="CLIProxyAPI_${version}_${os_arch}"
     local download_url=""
     
     # Handle different file extensions
