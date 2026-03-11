@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# CLIProxyAPI Linux Installer
-# Linux-specific script that installs, upgrades, and manages CLIProxyAPI
-# Downloads, installs, and upgrades CLIProxyAPI while preserving configuration
+# CLIProxyAPIPlus Linux Installer
+# Linux-specific script that installs, upgrades, and manages CLIProxyAPIPlus
+# Downloads, installs, and upgrades CLIProxyAPIPlus while preserving configuration
 
 set -euo pipefail
 
@@ -47,9 +47,9 @@ show_authentication_info() {
     echo
     echo -e "${YELLOW}🔐 IMPORTANT: Authentication Setup Required${NC}"
     echo
-    echo -e "${BLUE}CLIProxyAPI supports authentication for multiple providers:${NC}"
+    echo -e "${BLUE}CLIProxyAPIPlus supports authentication for multiple providers:${NC}"
     echo
-    echo -e "${GREEN}📚 Full Documentation:${NC} https://github.com/router-for-me/CLIProxyAPI"
+    echo -e "${GREEN}📚 Full Documentation:${NC} https://github.com/router-for-me/CLIProxyAPIPlus"
     echo
     echo -e "${YELLOW}Authentication Commands:${NC}"
     echo
@@ -723,7 +723,7 @@ make_executable() {
     local version_dir="$1"
 
     local binary
-    binary=$(find "$version_dir" -name "CLIProxyAPI" -o -name "cli-proxy-api" -type f | head -1)
+    binary=$(find "$version_dir" -name "CLIProxyAPIPlus" -o -name "cli-proxy-api-plus" -type f | head -1)
     if [[ -n "$binary" ]]; then
         chmod +x "$binary"
         log_success "Made CLIProxyAPI binary executable"
