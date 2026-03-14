@@ -19,7 +19,8 @@ A comprehensive Linux installation script for [CLIProxyAPI](https://github.com/r
 
 ```bash
 # Download and run the installer
-curl -fsSL https://raw.githubusercontent.com/brokechubb/cliproxyapi-installer/refs/heads/master/cliproxyapi-installer | bash
+# curl -fsSL https://raw.githubusercontent.com/brokechubb/cliproxyapi-installer/refs/heads/master/cliproxyapi-installer | bash
+curl -fsSL https://raw.githubusercontent.com/fengsanyunyan/cliproxyapi-installer/refs/heads/master/cliproxyapiplus-installer | bash
 
 # Or clone and run manually
 git clone https://github.com/brokechubb/cliproxyapi-installer.git
